@@ -2,21 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .paragraph{
+             background-color: rgb(56, 238, 0);
+        }
+        #one{
+            color: burlywood;
+        }
+    #two{
+        color: blueviolet;
+    }
+    #three{
+        color: chartreuse;
+    }
+    #four{
+        color: aqua;
+    }
+    #one,#three{
+        background-color: black;
+    }
+    #two{
+        background-color: brown;
+    }
+    #four{
+        background-color: bisque;
+    }
+    .text{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: x-large;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 10px;
+        line-height: 50px;
+        background-color: aqua;
+      text-transform: uppercase;
+      text-align: justify;
+    }
+         h1{
+            padding: 10px;
+            border: 10px solid rgb(173, 11, 11);
+            margin: 10px 20px green;
+         }   
+
+    </style>
     <title>Document</title>
 </head>
 
 <body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus cum sequi sapiente velit mollitia
-        repudiandae est quos laboriosam <br> <hr> vitae, fuga laudantium dolorem atque quam enim facere? Eligendi,
-        quisquam consequatur. Minima consequatur voluptate consectetur minus debitis eum quae atque quibusdam deleniti.
+    <h1 class="text">box model</h1>
+    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus cum sequi sapiente velit mollitia
+        repudiandae est quos laboriosam <br>  vitae, fuga laudantium dolorem atque quam enim facere? Eligendi,
+        quisquam consequatur. </p><p class="text"> consequatur voluptate consectetur minus debitis eum quae atque quibusdam deleniti.
         Rem nulla, a numquam cumque qui in.</p>
     <img src="./assets/image.png" alt="image" width="500px" height="500px">
     <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three </li>
+        <li id="one">one</li>
+        <li id="two">two</li>
+        <li id="three">three </li>
+        <li id="four">four</li>
     </ul>
     <ol>
         <li>one</li>
