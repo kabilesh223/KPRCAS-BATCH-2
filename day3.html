@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            gap: 10px;
+        }
+
+        .one {
+            padding: 10px;
+            background-color: brown;
+            grid-column: 1/5;
+        }
+
+        .two {
+            padding: 10px;
+            background-color: pink;
+            grid-row: 2/4;
+        }
+
+        .three {
+            padding: 10px;
+            background-color: rgb(255, 0, 0);
+            grid-column: 2/5;
+            grid-row: 2/4;
+        }
+
+        .four {
+            padding: 10px;
+            background-color: blue;
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="one">header</div>
+        <div class="two">sidebar</div>
+        <div class="three">content</div>
+        <div class="four">footer</div>
+    </div>
+</body>
+
+</html>
