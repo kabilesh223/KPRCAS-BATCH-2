@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Document</title>
+    
+        <!-- var a="10";
+        var b=20;
+        console.log (a/b) console.log (typeof a);
+        console.log (typeof b);
+        a=true 
+        console.log(typeof a);
+        var c;
+        console.log(typeof c);
+        var c=null;
+        console.log(c); -->
+    
+</head>
+
+<body>
+    <h1 id="text">java</h1>
+    <button onclick="HandelButtonclicked()">click mee</button>
+    <br><br>
+    <input type="text" id="name" placeholder="enter the name">
+    <button onclick="addname()">addname</button>
+    <ol id="list">
+        
+    </ol>
+    <script>
+        function addname()
+        {
+            const name=document.getElementById("name").value
+            const li=document.createElement("li");
+            li.innerText=name;
+            document.getElementById("list").append(li);
+         }
+        function HandelButtonclicked(){
+            console.log("buttonclicked")
+            const result= document.querySelector("#text") 
+             result.innerHTML=result.innerHTML==="Hello Kprcas"?"Hello World":"Hello Kprcas"
+             result.style.color ="red";
+             result.style.fontSize ="50px";    
+        }
+    </script>
+    
+
+</body>
+
+</html>
