@@ -21,13 +21,17 @@
         <h1 id="result2"></h1>
     </form>
     <script>
-        document.getElementById("form").addEventListener("submit",function(e)){
+        document.getElementById("form").addEventListener("submit",function(e)
+        {
             e.preventDefalt();
             const email=document.getElementById("email").value;
              const password=document.getElementById("password").value;
+             console.log(email,password)= document.getElementById("result1").textContent=email
+             document.getElementById("result2").textContent=password
              
+
             
-        }
+        })
     </script>
 
 </body>
